@@ -1,0 +1,31 @@
+{
+    "id":"acc.app.delete",
+    "name":"删除应用",
+    "description":"删除应用",
+    "namespace":"Kuga\\Api\\Acc",
+    "method":"App.delete",
+    "accessLevel": 1,
+    "request":[
+        {
+            "param":"id",
+            "required":true,
+            "default":"",
+            "type":"integer",
+            "description":"应用id"
+        },
+        {
+            "param":"secret",
+            "required":false,
+            "default":"",
+            "type":"string",
+            "description":"应用的secret"
+        }
+    ],
+    "response":{
+        "data":{
+            "type":"Boolean",
+            "sample":true,
+            "description":"成功返回true，失败返回false"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<privileges>
+	<resource title="应用" code="RES_APP">
+		<op title="添加" code="OP_ADD"/>
+		<op title="编辑" code="OP_UPDATE"/>
+		<op title="删除" code="OP_REMOVE"/>
+		<op title="查看列表" code="OP_LIST"/>
+	</resource>
+	<resource title="用户" code="RES_USER">
+		<op title="添加" code="OP_ADD"/>
+		<op title="编辑" code="OP_UPDATE"/>
+		<op title="删除" code="OP_REMOVE"/>
+		<op title="查看列表" code="OP_LIST"/>
+	</resource>
+
+	<resource title="权限系统" code="RES_ACC">
+		<op title="授权" code="OP_ASSIGN"/>
+		<op title="查看权限资源" code="OP_LIST_RES"/>
+		<op title="导入权限资源" code="OP_IMPORT_RES"/>
+		<op title="角色列表" code="OP_LIST_ROLE"/>
+		<op title="添加角色" code="OP_ADD_ROLE"/>
+		<op title="修改角色" code="OP_UPDATE_ROLE"/>
+		<op title="删除角色" code="OP_REMOVE_ROLE"/>
+	</resource>
+	<resource title="菜单管理" code="RES_MENU" idField="id" nameField="name" model="Kuga\Module\Acc\Model\MenuModel">
+		<op title="管理" code="OP_ADMIN" />
+	</resource>
+</privileges>

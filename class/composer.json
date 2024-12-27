@@ -1,0 +1,69 @@
+{
+    "name": "kuga/server-v3",
+    "description": "Kuga API Server",
+    "keywords": [
+        "PHP", "API Gateway"
+    ],
+    "version": "3.0.0",
+    "homepage": "http://github.io/misnet/",
+    "type": "library",
+    "license": "LGPL-3.0",
+    "authors": [
+        {
+            "name": "Donny Wong",
+            "homepage": "http://www.tapy.org",
+            "email":"dony@tapy.org"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+
+        "php": ">=7.4",
+        "kuga/qing": "~1.1.0",
+        "kuga/openapi-core": "~2.3.0",
+        "kuga/acc-api": "~2.0.0",
+        "alibabacloud/client":">=1.0.7",
+        "league/oauth2-client":"2.6.0",
+        "league/oauth2-google":"4.0.0",
+        "nomiscz/oauth2-wechat": "^v1.0.0"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/misnet/kuga-openapi-core"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/misnet/qing"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/misnet/acc-api"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/thephpleague/oauth2-client"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/thephpleague/oauth2-google"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/symfony/polyfill-mbstring"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/phpoffice/phpspreadsheet"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/guzzle/psr7"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/aliyun/openapi-sdk-php-client"
+        }
+
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "id":"acc.app.create",
+    "name":"创建应用",
+    "description":"创建应用",
+    "namespace":"Kuga\\Api\\Acc",
+    "method":"App.create",
+    "accessLevel": 1,
+    "request":[
+        {
+            "param":"name",
+            "required":true,
+            "default":"",
+            "type":"String",
+            "name":"应用名称"
+        },
+        {
+            "param":"disabled",
+            "required":false,
+            "default":"n",
+            "type":"string",
+            "name":"禁用，y禁用，n启用"
+        },
+        {
+            "param":"shortDesc",
+            "required":false,
+            "default":"",
+            "type":"String",
+            "name":"描述"
+        },
+        {
+            "param":"allowAutoCreateUser",
+            "required":false,
+            "default":"n",
+            "type":"String",
+            "name":"是否允许自动创建用户（比如通过验证码方式自动注册），y允许，n不允许"
+        }
+    ],
+    "response":{
+        "data":{
+            "type":"Boolean",
+            "sample":true,
+            "description":"成功返回true，失败返回false"
+        }
+    }
+}

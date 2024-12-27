@@ -1,0 +1,5 @@
+class/vendor
+class/composer.lock
+var/tmp
+.idea
+config/local.yaml
