@@ -15,6 +15,18 @@ define('DS',DIRECTORY_SEPARATOR);
 define('QING_ROOT_PATH', realpath(__DIR__));
 define('QING_PUBLIC_PATH',QING_ROOT_PATH.DS.'public');
 define('QING_TMP_PATH',QING_ROOT_PATH.DS.'var'.DS.'tmp');
+if(!file_exists(QING_TMP_PATH)) {
+    mkdir(QING_TMP_PATH, 0777, true);
+}
+if(!file_exists(QING_TMP_PATH.DS.'meta')){
+    mkdir(QING_TMP_PATH.DS.'meta',0777,true);
+}
+if(!file_exists(QING_TMP_PATH.DS.'cache')){
+    mkdir(QING_TMP_PATH.DS.'cache',0777,true);
+}
+if(!file_exists(QING_TMP_PATH.DS.'logs')){
+    mkdir(QING_TMP_PATH.DS.'logs',0777,true);
+}
 
 $di = new Phalcon\Di\FactoryDefault();
 \Kuga\Init::setTmpDir(QING_TMP_PATH);
